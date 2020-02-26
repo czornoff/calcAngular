@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en" ng-app="loja">
+ 
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script src="./src/controler.js"></script>
+        <script src="https://use.fontawesome.com/b8010ac847.js"></script>
+        
+    </head>
+
+    <body ng-controller="controler as lj" id="corpo">
+        <input type="text" ng-model="lj.meuNome"><br>
+        <input type="text" ng-model="lj.meuSobreNome"><hr>
+        
+        <i class="fas fa-adjust"></i>
+
+        <h1>{{lj.meuNome}}</h1>
+        <h1>{{lj.meuSobreNome}}</h1>
+
+        <a href="" ng-click="addNumero();">+++</a>
+        <h2  ng-click="addNumero();">#{{contador}}</h2><hr>
+
+        <ul>
+            <li ng-repeat="nome in pessoas">{{nome}}</li>
+
+        </ul>
+    </body>
+
+    ng-cl
+
+    </html>
